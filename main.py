@@ -47,8 +47,8 @@ def max_search(equipment_dict=None, bp_len=3, bp_width=3, start_value=15):
                 last_width += 1
                 txt_to_print += '\n'
         print(f'Наилучший вариант:\n'
-              '{txt_to_print}'
-              'Итоговые очки выживания: {new_list[0][0]}\n\n')
+              f'{txt_to_print}'
+              f'Итоговые очки выживания: {new_list[0][0]}\n\n')
     else:
         print('Вариантов, соответствующих условию задачи не найдено\n\n')
     return new_list
@@ -56,8 +56,8 @@ def max_search(equipment_dict=None, bp_len=3, bp_width=3, start_value=15):
 
 # Все комбинации
 result = max_search()
-print(f'Все комбинации:'
-      f'(очки выживания, количетсов мест, комбинация'
+print(f'Все комбинации:\n'
+      f'(очки выживания, количетсов мест, комбинация)\n'
       f'{result}\n\n')
 
 # Для 7 ячеек
